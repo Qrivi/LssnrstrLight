@@ -1,0 +1,39 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="horizontal">
+
+    <LinearLayout
+            android:layout_width="@dimen/part_date_width"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/date_holder">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="16"
+                android:id="@+id/date_daynumber"
+                style="@style/DayNumber"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_course_name"
+                android:text="januari"
+                android:id="@+id/date_month"
+                style="@style/Month"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="vrijdag"
+                android:id="@+id/date_dayname"
+                style="@style/DayName"/>
+    </LinearLayout>
+
+    <include layout="@layout/part_cal"/>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:padding="@dimen/padding_course_holder"
+        android:orientation="vertical"
+        android:id="@+id/course_holder"
+        android:background="@drawable/app_default">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_course_name"
+            android:text="[ name of the course ]"
+            android:id="@+id/course_name"
+            style="@style/CourseName"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[ location of the course ]"
+            android:id="@+id/cource_loc"
+            style="@style/CourseLoc"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_course_holder"
+            android:orientation="horizontal">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[ time of the course ]"
+                android:id="@+id/course_time"
+                style="@style/CourseTime"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="[ calendar of the course ]"
+                android:id="@+id/course_cal"
+                style="@style/CourseCal"/>
+    </LinearLayout>
+</LinearLayout>

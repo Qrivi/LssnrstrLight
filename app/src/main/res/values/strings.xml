@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_title">Calendar</string>
+    <string name="now">now</string>
+    <string name="refresh">Refresh</string>
+    <string name="over_at_time">over at %1$s</string>
+    <string name="fetching_calendars">Fetching calendars</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="cannot_retrieve_calendar">Cannot retrieve calendar</string>
+    <string name="error_in_calendar">Error in calendar</string>
+</resources>
