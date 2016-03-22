@@ -59,6 +59,11 @@ public class CalAdapter extends RecyclerView.Adapter<CalAdapter.ViewHolder>{
 
         viewHolder.cName.setText( item.getName() );
         viewHolder.cLoc.setText( item.getLoc() );
+
+
+        if( item.getStartTime().equals( item.getEndTime() ) )
+        viewHolder.cTime.setText( R.string.all_day_event );
+        else
         viewHolder.cTime.setText( item.getStartTime() + " — " + item.getEndTime() );
 
         viewHolder.cCal.setText( item.getType().toString() );

@@ -3,6 +3,7 @@
     <string name="now">nu</string>
     <string name="refresh">Vernieuwen</string>
     <string name="over_at_time">gedaan om %1$s</string>
+    <string name="all_day_event">Duurt de hele dag</string>
     <string name="fetching_calendars">Agenda\'s ophalen</string>
     <string name="no_internet_connection">Geen internetverbinding</string>
     <string name="cannot_retrieve_calendar">Agenda niet gevonden</string>

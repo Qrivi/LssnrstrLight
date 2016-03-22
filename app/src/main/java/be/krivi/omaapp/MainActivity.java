@@ -174,15 +174,17 @@ public class MainActivity extends AppCompatActivity{
                         }
                     }
 
-                    if( !name.equals( "" ) && !loc.equals( "" ) && !start.equals( "" ) && !end.equals( "" ) ){
+                    if( !name.equals( "" )&& !start.equals( "" ) && !end.equals( "" ) ){
                         DateTime startTime = new DateTime( start );
                         DateTime endTime = new DateTime( end );
                         Date now = new Date();
 
-                        if( startTime.after( now ) )
-                            data.add( new CalItem( name, loc, startTime, endTime, type ) );
+                        CalItem calItem = new CalItem( name, loc, startTime, endTime, type );
+
+                        if( startTime.after( now ) || ( endTime.after( now ) && endTime.getTime() - startTime.getTime() == 8.64e+7 ) )
+                            data.add( calItem );
                         else if( endTime.after( now ) )
-                            setCurrentEvent( new CalItem( name, loc, startTime, endTime, type ) );
+                            setCurrentEvent( calItem );
                     }
                     Collections.sort( data );
                     adapter.updateData( data );
